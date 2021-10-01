@@ -1,2 +1,2 @@
 # Angular
-Here we go my angular lab
+Here we go my angular Hero app
