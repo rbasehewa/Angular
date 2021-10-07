@@ -6,18 +6,7 @@
             <span class="badge">{{friend.id}}</span> {{friend.name}}
         </li>
     </ul>
-
-<div *ngIf="selectedFriend">
-
-    <h2>{{selectedFriend.name | uppercase}} Details</h2>
-    <div><span>id: </span>{{selectedFriend.id}}</div>
-
-    <div>
-        <label for="friend-name">Friend name:</label>
-        <input id="friend-name" [(ngModel)]="selectedFriend.name" placeholder="name">
-    </div>
-
-</div>
+<app-friend-detail [friend]="selectedFriend"></app-friend-detail>
 <!-- <ul class="friends">
     <li *ngFor="let friend of friends" (click)="onSelect(friend)">
         <span class="badge">{{friend.id}}</span> {{friend.name}}
