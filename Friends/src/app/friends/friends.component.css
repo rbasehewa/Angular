@@ -1,11 +1,42 @@
-/* .friends{
+.friends{
     margin: 0 0 2em 0;
     list-style-type: none;
     padding: 0;
-    width: 15em;
-} */
+}
 
-/* .friends .badge {
+.friends li{
+    cursor: pointer;
+    position: relative;
+    left: 0;
+    background-color: aqua;
+    margin: .5em;
+    padding: 0.3em 0;
+    height: 1.6em;
+    border-radius: 4px;
+}
+
+.friends li:hover{
+  color: blueviolet;
+  background-color: burlywood;
+}
+
+.friends li.selected {
+  background-color: black;
+  color: white;
+}
+
+.friends li.selected:hover {
+  background-color: #505050;
+  color: white;
+}
+
+.friends li.selected:active{
+  background-color: rgb(43, 226, 104);
+  color: brown;
+}
+
+
+.friends .badge {
     display: inline-block;
     font-size: small;
     color: white;
@@ -18,4 +49,9 @@
     height: 1.8em;
     margin-right: .8em;
     border-radius: 4px 0 0 4px;
-  } */
+  }
+
+
+  input{
+    padding: .5rem;
+  }
